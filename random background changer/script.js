@@ -19,5 +19,4 @@ function changeBg () {
   if (colorSelect == 6) {
     document.body.style.backgroundColor = "blue";
   }
-  console.log("hello");
 }
