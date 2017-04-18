@@ -1,7 +1,6 @@
-var colorSelect;
 var BgChanger = setInterval(changeBg, 1000);
 function changeBg () {
-  colorSelect = Math.floor(Math.random() * 6) + 1;
+  var colorSelect = Math.floor(Math.random() * 6) + 1;
   if (colorSelect == 1) {
     document.body.style.backgroundColor = "red";
   }
