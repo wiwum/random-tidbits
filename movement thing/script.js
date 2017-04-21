@@ -12,27 +12,27 @@ function keyPressDetector (k) {
   }
 }
 */
-    // Listen to keyboard. 
-    window.onkeypress = listenToTheKey;
-    window.onkeyup = listenToKeyUp;
+document.onkeydown = checkKey;
 
-    /*
-        Gets the key pressed and send a request to the associated function
-        @input key
-    */
-    function listenToTheKey(e)
-    {
-        if (editFlag == 0)
-        {
-            // If delete key is pressed calls delete
-            if (e.keyCode == 46)
-                console.log("hello");
+function checkKey(e) {
 
-            // If insert key is pressed calls add blank
-            if (e.keyCode == 45)
-                console.log("hello");
+    e = e || window.event;
 
-            if (e.keyCode == 17)
-                console.log("hello");
-        }
+    if (e.keyCode == '38') {
+        // up arrow
+        console.log("hello");
     }
+    else if (e.keyCode == '40') {
+        // down arrow
+        console.log("hello");
+    }
+    else if (e.keyCode == '37') {
+       // left arrow
+       console.log("hello");
+    }
+    else if (e.keyCode == '39') {
+       // right arrow
+       console.log("hello");
+    }
+
+}
