@@ -4,7 +4,6 @@ var itemX = 400;
 var itemY = 400;
 
 item.innerHTML = "O";
-item.style.paddingLeft = itemX + "px";
 
 document.onkeydown = checkKey;
 
