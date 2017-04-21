@@ -1,9 +1,10 @@
 //variables
 var item = document.getElementById('moveItem');
-var itemX = 400px;
+var itemX = 400;
+var itemY = 400;
 
 item.innerHTML = "O";
-item.style.paddingLeft = itemX;
+item.style.paddingLeft = itemX + "px";
 
 document.onkeydown = checkKey;
 
@@ -20,12 +21,16 @@ function checkKey(e) {
         console.log("hello");
     }
     else if (e.keyCode == '37') {
-       // left arrow
-       console.log("hello");
+        // left arrow
+        console.log("hello");
+        itemX -= 10;
+        console.log(itemX);
     }
     else if (e.keyCode == '39') {
-       // right arrow
-       console.log("hello");
+        // right arrow
+        console.log("hello");
+        itemX += 10;
+        console.log(itemX);
     }
 
 }
