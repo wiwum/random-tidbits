@@ -20,7 +20,7 @@ function checkKey(e) {
     else if (e.keyCode == '40') {
         // down arrow
         console.log("hello");
-        itemY -= 10;
+        itemY += 10;
         console.log(itemY);
     }
     else if (e.keyCode == '37') {
