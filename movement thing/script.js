@@ -32,5 +32,5 @@ function checkKey(e) {
         itemX += 10;
         console.log(itemX);
     }
-
+    item.style.paddingLeft = itemX + "px";
 }
