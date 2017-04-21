@@ -14,10 +14,14 @@ function checkKey(e) {
     if (e.keyCode == '38') {
         // up arrow
         console.log("hello");
+        itemY -= 10;
+        console.log(itemY);
     }
     else if (e.keyCode == '40') {
         // down arrow
         console.log("hello");
+        itemY -= 10;
+        console.log(itemY);
     }
     else if (e.keyCode == '37') {
         // left arrow
@@ -32,6 +36,6 @@ function checkKey(e) {
         console.log(itemX);
     }
     item.style.paddingLeft = itemX + "px";
-    item.style.paddingTop = itemY + "px";
+    item.style.marginTop = itemY + "px";
     item.style.color = "red"
 }
