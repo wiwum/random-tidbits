@@ -32,5 +32,6 @@ function checkKey(e) {
         console.log(itemX);
     }
     item.style.paddingLeft = itemX + "px";
+    item.style.paddingTop = itemY + "px";
     item.style.color = "red"
 }
