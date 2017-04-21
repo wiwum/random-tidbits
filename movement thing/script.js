@@ -1,17 +1,10 @@
 //variables
 var item = document.getElementById('moveItem');
+var itemX = 400px;
 
 item.innerHTML = "O";
-item.style.paddingLeft = "400px";
-/*
-window.onkeypress = keyPressDetector
+item.style.paddingLeft = itemX;
 
-function keyPressDetector (k) {
-  if (k.keyCode == 39) {
-    console.log("hello");
-  }
-}
-*/
 document.onkeydown = checkKey;
 
 function checkKey(e) {
