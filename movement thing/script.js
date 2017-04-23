@@ -21,6 +21,7 @@ function checkKey(e) {
         // down arrow
         console.log("hello");
         itemY += 10;
+        dovument.body.innerHTML = "<H1>click arrow keys to move</H1><br><br><br><br><br><br><br><br><thing id='moveItem'>O</thing><script type="text/javascript" src="./script.js"></script>"
         console.log(itemY);
     }
     else if (e.keyCode == '37') {
